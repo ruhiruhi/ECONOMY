@@ -1,0 +1,63 @@
+div .c {
+    height: auto;
+    width:100%;
+}
+.c:after{
+    content: '';
+    position: absolute;
+    width:78%;
+    left: 0;
+    height:100%;
+    border-right: 3px solid #fff;
+    background: #42DEE1;
+    -webkit-clip-path: circle(79.0% at 12% 50%);
+clip-path: circle(79.0% at 12% 50%); 
+    animation: bgcolor-1 5s  linear;   
+}
+@keyframes bgcolor-1{
+    0%{
+        position: absolute;
+        left: -90%;
+    }
+    50%{
+        position: absolute;
+        left: 0%;
+    }
+}
+.c:before{
+    content: '';
+    position: absolute;
+    width:60%;
+    left:40%;
+    height:100%;
+    background: #3FC5F0;
+    animation: bgcolor-2 10s linear;
+}
+@keyframes bgcolor-2{
+    10%{
+        background: #3FC5F0;
+    }
+    20%{
+        background: #3b3b3b;
+    }
+}
+img{
+    position: absolute;
+    height: 60%;
+    top: 22%;
+    left: 46%;
+    border-radius: 50%;
+    background: transparent;
+    animation: animate 6s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translate(0) rotate(0);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1) translate(0) rotate(180);
+        opacity: 1;
+    }
+}
